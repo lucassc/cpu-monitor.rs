@@ -1,0 +1,11 @@
+[Unit]
+Description=CPU Throttling Monitor
+After=syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/cpu-throttling-monitor
+User=USER_NAME_TO_REPLACE
+Environment="DISPLAY=DISPLAY_ENV_TO_REPLACE" "XAUTHORITY=XAUTHORITY_ENV_TO_REPLACE" "DBUS_SESSION_BUS_ADDRESS=DBUS_SESSION_BUS_ADDRESS_ENV_TO_REPLACE"
+
+[Install]
+WantedBy=multi-user.target
