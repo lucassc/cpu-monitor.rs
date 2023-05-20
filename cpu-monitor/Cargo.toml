@@ -1,0 +1,12 @@
+[package]
+name = "cpu-monitor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gdk = "0.16.2"
+gio = "0.16.2"
+glib = "0.16.2"
+sysinfo = "0.14.1"
