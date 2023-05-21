@@ -49,7 +49,7 @@ To view the notifications, ensure that the notify-send command-line tool is inst
 
 ## Configuration
 
-You can adjust the CPU usage threshold and notification settings by modifying the constants defined in the main.rs file:
+You can adjust the CPU usage threshold and notification settings by modifying the constants defined in the main.rs or notification.rs file:
 
     CPU_USAGE_THRESHOLD: The CPU usage threshold in MHz.
     NOTIFICATION_TITLE: The title of the notification.
