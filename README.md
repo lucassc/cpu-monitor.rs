@@ -58,6 +58,8 @@ export CTM_NOTIFICATION_BODY="CPU being throttled"
 export CTM_NOTIFICATION_SECONDS_INTERVAL=2000
 ```
 
+Another option is define those variables at [cpu-throttling-monitor.service.TEMPLATE](./cpu-throttling-monitor.service.TEMPLATE) at [Service].Environment
+
 ## Contributing
 
 Contributions to the CPU Throttling Monitor are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
