@@ -49,12 +49,14 @@ To view the notifications, ensure that the notify-send command-line tool is inst
 
 ## Configuration
 
-You can adjust the CPU usage threshold and notification settings by modifying the constants defined in the main.rs or notification.rs file:
+You can adjust the CPU usage threshold and notification settings by modifying the default constants defined in the configuration.rs or setting following environment variables
 
-    CPU_USAGE_THRESHOLD: The CPU usage threshold in MHz.
-    NOTIFICATION_TITLE: The title of the notification.
-    NOTIFICATION_BODY: The body/content of the notification.
-    SEND_NOTIFICATION_SECONDS_INTERVAL: The interval in seconds between sending notifications.
+```BASH
+export CTM_THRESHOLD=400
+export CTM_NOTIFICATION_TITLE="Warning"
+export CTM_NOTIFICATION_BODY="CPU being throttled"
+export CTM_NOTIFICATION_SECONDS_INTERVAL=2000
+```
 
 ## Contributing
 

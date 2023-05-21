@@ -1,6 +1,10 @@
 {
     "cSpell.words": [
         "chrono",
+        "confy",
         "sysinfo"
+    ],
+    "rust-analyzer.linkedProjects": [
+        "./cpu-throttling-monitor/Cargo.toml"
     ]
 }
