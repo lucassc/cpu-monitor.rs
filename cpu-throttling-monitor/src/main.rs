@@ -1,6 +1,4 @@
-extern crate sysinfo;
-
-use sysinfo::{ProcessorExt, System, SystemExt};
+use sysinfo::{ProcessorExt, RefreshKind, System, SystemExt};
 
 pub mod configuration;
 mod notification;
@@ -25,9 +23,9 @@ fn cpu_usage_loop() {
 }
 
 fn cpu_usage(notification: &mut notification::Notification, threshold: u64) {
-    let mut system = System::new_all();
+    let mut system = System::new_with_specifics(RefreshKind::new().with_cpu());
 
-    system.refresh_all();
+    system.refresh_cpu();
     let processors = system.get_processors();
 
     for processor in processors {
